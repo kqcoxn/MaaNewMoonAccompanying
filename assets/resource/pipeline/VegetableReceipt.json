@@ -1,0 +1,183 @@
+{
+    "VegetableReceipt": {
+        "next": [
+            "VegetableReceipt_进入界面",
+            "VegetableReceipt_开始收菜"
+        ]
+    },
+    "VegetableReceipt_进入界面": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "城市探索",
+        "post_delay": 2000,
+        "next": [
+            "VegetableReceipt_开始收菜"
+        ]
+    },
+    "VegetableReceipt_开始收菜": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "资源收取",
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_结束资源收取",
+            "VegetableReceipt_制造订单",
+            "VegetableReceipt_设施管理"
+        ]
+    },
+    "VegetableReceipt_结束资源收取": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "点击以继续",
+        "next": [
+            "VegetableReceipt_制造订单",
+            "VegetableReceipt_设施管理"
+        ]
+    },
+    "VegetableReceipt_制造订单": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "制造订单可领取",
+        "next": [
+            "VegetableReceipt_开始制造"
+        ]
+    },
+    "VegetableReceipt_开始制造": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "开始制造",
+        "post_delay": 4000,
+        "next": [
+            "VegetableReceipt_继续制造"
+        ]
+    },
+    "VegetableReceipt_继续制造": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "点击以继续",
+        "next": [
+            "VegetableReceipt_开始制造",
+            "VegetableReceipt_结束制造"
+        ],
+        "timeout": 5000
+    },
+    "VegetableReceipt_结束制造": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            60,
+            30,
+            90,
+            30
+        ],
+        "next": [
+            "VegetableReceipt_设施管理"
+        ]
+    },
+    "VegetableReceipt_设施管理": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "设施管理",
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_一键入驻"
+        ]
+    },
+    "VegetableReceipt_一键入驻": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "键入驻",
+        "next": [
+            "VegetableReceipt_物资类"
+        ]
+    },
+    "VegetableReceipt_物资类": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "物资类",
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_进入物资"
+        ]
+    },
+    "VegetableReceipt_进入物资": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "进入",
+        "post_delay": 1500,
+        "next": [
+            "VegetableReceipt_物资加速"
+        ]
+    },
+    "VegetableReceipt_物资加速": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "加速",
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_最大加速"
+        ]
+    },
+    "VegetableReceipt_最大加速": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "最多",
+        "next": [
+            "VegetableReceipt_确认加速"
+        ]
+    },
+    "VegetableReceipt_确认加速": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "确定",
+        "next": [
+            "VegetableReceipt_结束物资1"
+        ]
+    },
+    "VegetableReceipt_结束物资1": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            60,
+            30,
+            90,
+            30
+        ],
+        "next": [
+            "VegetableReceipt_结束物资2"
+        ]
+    },
+    "VegetableReceipt_结束物资2": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            60,
+            30,
+            90,
+            30
+        ],
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_结束物资3"
+        ]
+    },
+    "VegetableReceipt_结束物资3": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            60,
+            30,
+            90,
+            30
+        ],
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_制造订单",
+            "VegetableReceipt_结束"
+        ],
+        "timeout": 3000
+    },
+    "VegetableReceipt_结束": {
+        "action": "DoNothing"
+    }
+}
