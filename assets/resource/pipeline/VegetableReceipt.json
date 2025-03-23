@@ -46,7 +46,20 @@
         "recognition": "OCR",
         "action": "Click",
         "expected": "开始制造",
-        "post_delay": 4000,
+        "next": [
+            "VegetableReceipt_继续制造",
+            "VegetableReceipt_跳过制造动画"
+        ]
+    },
+    "VegetableReceipt_跳过制造动画": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            60,
+            30,
+            90,
+            30
+        ],
         "next": [
             "VegetableReceipt_继续制造"
         ]
@@ -158,10 +171,59 @@
         ],
         "post_delay": 1000,
         "next": [
-            "VegetableReceipt_结束物资3"
+            "VegetableReceipt_传闻调查"
         ]
     },
-    "VegetableReceipt_结束物资3": {
+    "VegetableReceipt_传闻调查": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "传闻调查",
+        "post_delay": 1500,
+        "next": [
+            "VegetableReceipt_开始审阅",
+            "VegetableReceipt_结束审阅"
+        ]
+    },
+    "VegetableReceipt_开始审阅": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "开始审阅",
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_归档"
+        ]
+    },
+    "VegetableReceipt_归档": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "归档",
+        "index": -1,
+        "post_delay": 3000,
+        "next": [
+            "VegetableReceipt_成功归档",
+            "VegetableReceipt_结束归档"
+        ]
+    },
+    "VegetableReceipt_成功归档": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "点击空白处关闭",
+        "post_delay": 3000,
+        "next": [
+            "VegetableReceipt_结束归档"
+        ]
+    },
+    "VegetableReceipt_结束归档": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "点击以继续",
+        "post_delay": 1000,
+        "next": [
+            "VegetableReceipt_开始审阅",
+            "VegetableReceipt_结束审阅"
+        ]
+    },
+    "VegetableReceipt_结束审阅": {
         "recognition": "DirectHit",
         "action": "Click",
         "target": [
@@ -170,12 +232,9 @@
             90,
             30
         ],
-        "post_delay": 1000,
         "next": [
-            "VegetableReceipt_制造订单",
             "VegetableReceipt_结束"
-        ],
-        "timeout": 3000
+        ]
     },
     "VegetableReceipt_结束": {
         "action": "DoNothing"

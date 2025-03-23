@@ -1,0 +1,101 @@
+{
+    "DailyPurchase": {
+        "next": [
+            "DailyPurchase_进入采购中心",
+            "DailyPurchase_补给包"
+        ]
+    },
+    "DailyPurchase_进入采购中心": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "采购中心",
+        "post_delay": 3000,
+        "next": [
+            "DailyPurchase_补给包"
+        ]
+    },
+    "DailyPurchase_补给包": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "补给包",
+        "post_delay": 1500,
+        "next": [
+            "DailyPurchase_特惠活动"
+        ]
+    },
+    "DailyPurchase_特惠活动": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "特惠活动",
+        "post_delay": 1500,
+        "next": [
+            "DailyPurchase_每日补给包",
+            "DailyPurchase_流动市场"
+        ]
+    },
+    "DailyPurchase_每日补给包": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "免费",
+        "post_delay": 1500,
+        "next": [
+            "DailyPurchase_购买每日补给包"
+        ]
+    },
+    "DailyPurchase_购买每日补给包": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "免费购买",
+        "post_delay": 1500,
+        "next": [
+            "DailyPurchase_结束购买每日补给包"
+        ]
+    },
+    "DailyPurchase_结束购买每日补给包": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "点击以继续",
+        "next": [
+            "DailyPurchase_流动市场"
+        ]
+    },
+    "DailyPurchase_流动市场": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "流动市场",
+        "post_delay": 1500,
+        "next": [
+            "DailyPurchase_特价交易所"
+        ]
+    },
+    "DailyPurchase_特价交易所": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "特价交易所",
+        "post_delay": 1500,
+        "next": [
+            "DailyPurchase_特价交易所底部商品"
+        ]
+    },
+    "DailyPurchase_特价交易所底部商品": {
+        "action": "Swipe",
+        "begin": [
+            755,
+            568,
+            1,
+            1
+        ],
+        "end": [
+            762,
+            241,
+            1,
+            1
+        ],
+        "next": [
+            "DailyPurchase_结束采购"
+        ]
+    },
+    "DailyPurchase_结束采购": {
+        "action": "DoNothing"
+    }
+}

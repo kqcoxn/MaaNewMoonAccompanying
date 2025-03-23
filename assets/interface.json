@@ -23,12 +23,20 @@
     },
     "task": [
         {
-            "name": "拘束塔单层连续作战",
-            "entry": "DetentionTowerSingle"
+            "name": "启动游戏",
+            "entry": "StartGame"
         },
         {
-            "name": "清日常",
+            "name": "一键收菜",
             "entry": "VegetableReceipt"
+        },
+        {
+            "name": "每日采购",
+            "entry": "DailyPurchase"
+        },
+        {
+            "name": "拘束塔单层连续作战",
+            "entry": "DetentionTowerSingle"
         }
     ]
 }

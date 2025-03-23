@@ -1,0 +1,52 @@
+{
+    "StartGame": {
+        "next": [
+            "StartGame_进入主界面",
+            "StartGame_领取签到奖励",
+            "StartGame_已进入"
+        ]
+    },
+    "StartGame_进入主界面": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "校准现实",
+        "post_delay": 3000,
+        "next": [
+            "StartGame_进入主界面",
+            "StartGame_领取签到奖励",
+            "StartGame_已进入"
+        ]
+    },
+    "StartGame_领取签到奖励": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "点击以继续",
+        "next": [
+            "StartGame_关闭签到"
+        ]
+    },
+    "StartGame_关闭签到": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            60,
+            30,
+            90,
+            30
+        ],
+        "next": [
+            "StartGame_结束进入"
+        ]
+    },
+    "StartGame_已进入": {
+        "recognition": "OCR",
+        "action": "DoNothing",
+        "expected": "特工管理",
+        "next": [
+            "StartGame_结束进入"
+        ]
+    },
+    "StartGame_结束进入": {
+        "action": "DoNothing"
+    }
+}
