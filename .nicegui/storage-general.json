@@ -1,1 +1,14 @@
-{"controller_type":"Adb","adb_path":"E:\\_Games\\MuMu Player 12\\shell\\adb.exe","adb_address":"127.0.0.1:16384","adb_config":"{\"extras\": {\"mumu\": {\"enable\": true, \"index\": 0, \"path\": \"E:/_Games/MuMu Player 12\"}}}","hwnd":"","win32_screencap":4,"win32_input":1,"window_name":"","resource_dir":"D:\\_Projects\\programs\\MaaNewMoonAccompanying\\assets\\resource\\base","agent_identifier":"1bcf6108-75f3-47e4-bc96-f8b5a2379011","task_entry":"友谊交换_开始","task_pipeline_override":"{}"}
+{
+  "controller_type": "Adb",
+  "adb_path": "E:\\_Games\\MuMu Player 12\\shell\\adb.exe",
+  "adb_address": "127.0.0.1:16384",
+  "adb_config": "{\"extras\": {\"mumu\": {\"enable\": true, \"index\": 0, \"path\": \"E:/_Games/MuMu Player 12\"}}}",
+  "hwnd": "",
+  "win32_screencap": 4,
+  "win32_input": 1,
+  "window_name": "",
+  "resource_dir": "D:\\_Projects\\programs\\MaaNewMoonAccompanying\\assets\\resource\\base",
+  "agent_identifier": "1bcf6108-75f3-47e4-bc96-f8b5a2379011",
+  "task_entry": "友谊交换_开始",
+  "task_pipeline_override": "{}"
+}

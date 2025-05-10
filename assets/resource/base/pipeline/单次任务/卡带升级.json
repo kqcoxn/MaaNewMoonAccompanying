@@ -147,6 +147,21 @@
         },
         "next": [
             "卡带升级_选择卡带"
+        ],
+        "on_error": []
+    },
+    "卡带升级_选择模块组": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            180,
+            145,
+            90,
+            90
+        ],
+        "focus": "> 选择模块组",
+        "next": [
+            "卡带升级_模块组突破"
         ]
     },
     "卡带升级_选择卡带": {
@@ -166,8 +181,25 @@
             }
         },
         "next": [
+            "检查卡带为空",
             "卡带升级_突破"
         ]
+    },
+    "检查卡带为空": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/card/cancel.png"
+        ],
+        "focus": "> 检查卡带是否为空",
+        "next": [
+            "卡带为空_结束"
+        ]
+    },
+    "卡带为空_结束": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "focus": "> 卡带为空_结束"
     },
     "卡带升级_突破": {
         "recognition": "TemplateMatch",
@@ -187,6 +219,24 @@
             "卡带升级_确定突破"
         ],
         "on_error": [
+            "卡带升级_加速升级"
+        ]
+    },
+    "卡带升级_模块组突破": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/card/breakthrough.png"
+        ],
+        "focus": "> 模块组突破",
+        "timeout": 2000,
+        "__yamaape": {
+            "position": {
+                "x": 1283,
+                "y": 502
+            }
+        },
+        "next": [
             "卡带升级_加速升级"
         ]
     },
